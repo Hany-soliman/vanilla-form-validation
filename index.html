@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">
+    <h1>sing up today</h1>
+    <!--    form-->
+    <form id="form" novalidate>
+        <!--        full name-->
+        <div class="form-group">
+            <label for="name">full name</label>
+            <input id="name" maxlength="120" placeholder="Full Name" required type="text">
+        </div>
+        <!--        phone number-->
+        <div class="form-group">
+            <label for="phone">phone number</label>
+            <input id="phone" placeholder="+20 555-555-5555" required type="tel">
+        </div>
+        <!--        email address-->
+        <div class="form-group">
+            <label for="email">email address</label>
+            <input id="email" maxlength="254" placeholder="email@address.com" required type="email">
+        </div>
+        <!--        email address-->
+        <div class="form-group">
+            <label for="website">website URL</label>
+            <input id="website" maxlength="120" placeholder="https://github.com/Hany-soliman" required type="url">
+        </div>
+        <!--        password-->
+        <div class="form-group">
+            <label for="password">create password</label>
+            <input id="password" placeholder="Create Password" required type="password">
+        </div>
+        <!--     confirm password-->
+        <div class="form-group">
+            <label for="confirm-password">confirm password</label>
+            <input id="confirm-password" placeholder="Create Password" required type="password">
+        </div>
+        <button type="submit">register</button>
+    </form>
+    <div class="message-container">
+        <h3 id="message">dont hesitate!</h3>
+    </div>
+</div>
+<!--script-->
+<script src="./app.js" type="module"></script>
+</body>
+</html>
